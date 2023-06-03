@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 120px;
+            background: url('https://media.idownloadblog.com/wp-content/uploads/2020/06/macOS-Big-Sur-Daylight-Wallpaper-iDownloadBlog-1472x1472.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .contact-form {
+
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        .card {
+            border-radius: 15px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Will</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">My Articles</h1>
+            </div>
+            <div class="container">
+                <div class="contact-form mt-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason for contact</label>
+                            <select class="form-control" id="reason">
+                                <option value="">Please select</option>
+                                <option>Job Opportunity</option>
+                                <option>Project Collaboration</option>
+                                <option>Consultation Request</option>
+                                <option>Question or Inquiry</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card mt-5 mb-5 p-4 bg-white ">
+                    <h2 class="text-center">Get a free one-on-one consultation!</h2>
+                    <p class="text-center">Buy me a coffee and we can sit down and talk about your project, career, or anything you'd like!</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary">Buy me a ☕</button>
+                    </div>
+
+                    <table class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th scope="col">Duration</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15 minutes</td>
+                                <td>$5</td>
+                            </tr>
+                            <tr>
+                                <td>30 minutes</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>2 hours</td>
+                                <td>$30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="consultation-options">
+                        <h3 class="mt-4">Consultation options:</h3>
+                        <ol>
+                            <li>Project brainstorming session</li>
+                            <li>Resume or portfolio review</li>
+                            <li>Career advice and guidance</li>
+                            <li>General !nA and discussion</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+    </html>
